@@ -19,6 +19,17 @@ A complete Guide to Install Frappe/ERPNext version 15  in Ubuntu 22.04 LTS
       NGINX                                         (proxying multitenant sites in production)
 
 
+
+## Create User
+
+sudo adduser frappe
+
+usermod -aG sudo frappe
+
+su frappe
+
+cd~
+
 ------
 ### Steps to Install python 3.11.xx
 ------
@@ -34,6 +45,14 @@ A complete Guide to Install Frappe/ERPNext version 15  in Ubuntu 22.04 LTS
 
       sudo apt install python3.11
       python3.11 --version
+
+### Set Python3.11 Default
+
+      sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 110
+
+      sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 100
+
+      sudo update-alternatives --config python3
 
     
 #### To install all the extras in one go, run the following command.
