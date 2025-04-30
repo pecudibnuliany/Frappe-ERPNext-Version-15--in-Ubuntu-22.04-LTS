@@ -191,6 +191,8 @@ Now press (Ctrl-X) to exit
     
     bench --site dcode.com add-to-hosts
 
+    bench --site dcode.com migrate
+
 Open url http://dcode.com:8000 to login 
 
 
@@ -202,6 +204,8 @@ Open url http://dcode.com:8000 to login
     bench get-app https://github.com/frappe/erpnext --branch version-15
 
     bench --site dcode.com install-app erpnext
+      
+    bench --site dcode.com migrate  
     
     bench start
     
