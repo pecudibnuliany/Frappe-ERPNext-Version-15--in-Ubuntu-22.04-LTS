@@ -28,7 +28,7 @@ usermod -aG sudo frappe
 
 su frappe
 
-cd~
+cd ~
 
 ------
 ### Steps to Install python 3.11.xx
